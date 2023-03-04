@@ -1,0 +1,32 @@
+# Configuration for TinyHTTPProxy
+[server]
+listen = "127.0.0.1:80"
+
+[http]
+https_enable = false
+https_verify_peer = false
+https_verify_hostname = false
+https_ca_file = ""
+https_ca_path = ""
+https_cert_file = ""
+https_key_file = ""
+https_ciphers = ""
+
+[log]
+log_level = "info"
+log_file = "/var/log/tinyhttpproxy/tinyhttpproxy.log"
+log_format = "json"
+log_max_size = 10485760
+log_max_files = 10
+log_compress = true
+log_rotate = true
+log_rotate_date = 0
+log_rotate_size = 0
+
+[access_log]
+access_log_enable = false
+access_log_file = "/var/log/tinyhttpproxy/tinyhttpproxy_access.log"
+
+[error_log]
+error_log_enable = false
+error_log_file = "/var/log/tinyhttpproxy/tinyhttpproxy_error.log"

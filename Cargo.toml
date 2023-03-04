@@ -8,8 +8,4 @@ rust-version = "1.56"
 [dependencies]
 hyper = { version = "0.14", features = ["full"] }
 tokio = { version = "1", features = ["full"] }
-pretty_env_logger = "0.4"
 http = "0.2"
-http-body = "0.4"
-httpdate = "1.0"
-httparse = "1.8"
